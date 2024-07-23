@@ -43,6 +43,7 @@ const SearchResults = () => {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`, 
+            'Accept': 'application/json',
           },
           body: JSON.stringify(searchParams),
           credentials: 'omit',
@@ -59,6 +60,7 @@ const SearchResults = () => {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
+            'Accept': 'application/json',
           },
           body: JSON.stringify(searchParams),
           credentials: 'omit',
@@ -79,6 +81,7 @@ const SearchResults = () => {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
+            'Accept': 'application/json',
           },
           body: JSON.stringify({ ids: publicationIds }),
           credentials: 'omit',
